@@ -8,7 +8,6 @@ var request       = require("request-promise-native")
 async function getSubtitles(dir, name, langId, userAgent) {
 	var OpenSubtitles = new os_api(userAgent)
 	var parse = {
-		filename: name,
 		extensions: ['srt', 'vtt'],
 		limit: 'all',
 		gzip: true
@@ -16,6 +15,7 @@ async function getSubtitles(dir, name, langId, userAgent) {
 
 	if (fs.existsSync(dir + name)) {
 		parse['path'] = dir + name
+		parse['filename'] = name
 	} else {
 		parse['query'] = name
 	}
@@ -49,6 +49,14 @@ async function getSubtitles(dir, name, langId, userAgent) {
 		}
 	} else {
 		console.log('[!] No subtitles')
+		var aval_print = true
+		for (var index in subtitles) {
+			if (aval_print) {
+				console.log('[!] Avaliables subtitles in')
+				aval_print = false
+			}
+			console.log('[>] langId:', index, 'Subtitles:', (subtitles[index]).length)
+		}
 	}
 }
 

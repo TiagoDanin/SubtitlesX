@@ -29,10 +29,13 @@
   },
   "homepage": "https://github.com/TiagoDanin/SubtitlesX#readme",
   "dependencies": {
-    "caporal": "^0.9.0",
-    "opensubtitles-api": "^4.0.0",
-    "request": "^2.83.0",
-    "request-promise-native": "^1.0.5",
-    "zlib": "^1.0.5"
+    "caporal": "0.9.0",
+    "opensubtitles-api": "4.0.0",
+    "request": "2.83.0",
+    "request-promise-native": "1.0.5",
+    "zlib": "1.0.5"
+  },
+  "engines" : {
+    "node": ">=8"
   }
 }

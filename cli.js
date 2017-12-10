@@ -7,7 +7,7 @@ var app  = require('subtitlesx')
 prog
 	.version('1.0.0')
 	.description('CLI Tool to download subtitles for movies and series.')
-	.argument('<file>', 'Filename of movie or serie', prog.REPEATABLE)
+	.argument('<file>', 'Filename or Query Text of movie or serie', prog.REPEATABLE)
 	.argument('<langId>', 'Language ID, e.g en', prog.REPEATABLE)
 	.argument('<userAgert>', 'UserAgert, e.g TemporaryUserAgent', prog.REPEATABLE)
 	.action(function(args, options, logger) {
