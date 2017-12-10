@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "CLI to download subtitles for movies and series.",
   "main": "index.js",
+  "bin": {
+    "subtitlesx": "cli.js"
+  },
   "scripts": {
     "test": "node test.js"
   },
@@ -23,5 +26,12 @@
   "bugs": {
     "url": "https://github.com/TiagoDanin/SubtitlesX/issues"
   },
-  "homepage": "https://github.com/TiagoDanin/SubtitlesX#readme"
+  "homepage": "https://github.com/TiagoDanin/SubtitlesX#readme",
+  "dependencies": {
+    "caporal": "^0.9.0",
+    "opensubtitles-api": "^4.0.0",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "zlib": "^1.0.5"
+  }
 }
