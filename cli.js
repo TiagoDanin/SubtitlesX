@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 var prog = require('caporal')
-var app  = require('./index.js')
+var path = require('path')
+var app  = require('subtitlesx')
 
 prog
 	.version('1.0.0')
@@ -10,11 +11,10 @@ prog
 	.argument('<langId>', 'Language ID, e.g en', prog.REPEATABLE)
 	.argument('<userAgert>', 'UserAgert, e.g TemporaryUserAgent', prog.REPEATABLE)
 	.action(function(args, options, logger) {
-		console.log(args)
 		try {
 			logger.info('[+] Start')
-			app.getSubtitles(args['file'], args['langId'], args['userAgert'])
-			logger.info('[+] Finish')
+			var dir = path.resolve(process.cwd() +  '\\')
+			app.getSubtitles(dir, args['file'], args['langId'], args['userAgert'])
 		} catch (e) {
 			logger.error('[-] Error', e)
 		}

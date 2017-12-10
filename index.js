@@ -5,14 +5,19 @@ var os_api        = require('opensubtitles-api')
 var zlib          = require('zlib')
 var request       = require("request-promise-native")
 
-async function getSubtitles(name, langId, userAgent) {
+async function getSubtitles(dir, name, langId, userAgent) {
 	var OpenSubtitles = new os_api(userAgent)
 	var parse = {
-		path: name,
 		filename: name,
 		extensions: ['srt', 'vtt'],
 		limit: 'all',
 		gzip: true
+	}
+
+	if (fs.existsSync(dir + name)) {
+		parse['path'] = dir + name
+	} else {
+		parse['query'] = name
 	}
 
 	var regex = /[Ss](\d*)[Ee](\d*)/g;
@@ -42,6 +47,8 @@ async function getSubtitles(name, langId, userAgent) {
 			console.log('[+] Donwload:', filename)
 			fs.writeFileSync(filename, subtitle_content)
 		}
+	} else {
+		console.log('[!] No subtitles')
 	}
 }
 
