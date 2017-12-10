@@ -1,6 +1,4 @@
-# SubtitlesX [![Build Status](https://travis-ci.org/TiagoDanin/subtitlesx.svg?branch=master)](https://travis-ci.org/TiagoDanin/subtitlesx)
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/TiagoDanin/SubtitlesX.svg)](https://greenkeeper.io/)
+# SubtitlesX [![Build Status](https://travis-ci.org/TiagoDanin/SubtitlesX.svg?branch=master)](https://travis-ci.org/TiagoDanin/SubtitlesX) [![Greenkeeper badge](https://badges.greenkeeper.io/TiagoDanin/SubtitlesX.svg)](https://greenkeeper.io/)
 
 [![NPM](https://nodei.co/npm/subtitlesx.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/subtitlesx/)
 
@@ -15,4 +13,5 @@ Run `subtitlesx --help`
 
 # API
 - `getSubtitles(dir, name, langId, userAgent)`
+
 e.g `getSubtitles('/root/movies/', 'Interstellar.mp4', 'en', 'TemporaryUserAgent')`
