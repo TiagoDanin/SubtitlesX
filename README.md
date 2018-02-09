@@ -1,4 +1,4 @@
-# SubtitlesX [![Build Status](https://travis-ci.org/TiagoDanin/SubtitlesX.svg?branch=master)](https://travis-ci.org/TiagoDanin/SubtitlesX) [![Greenkeeper badge](https://badges.greenkeeper.io/TiagoDanin/SubtitlesX.svg)](https://greenkeeper.io/)
+# SubtitlesX [![Build Status](https://travis-ci.org/TiagoDanin/SubtitlesX.svg?branch=master)](https://travis-ci.org/TiagoDanin/SubtitlesX)
 
 [![NPM](https://nodei.co/npm/subtitlesx.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/subtitlesx/)
 
