@@ -1,6 +1,6 @@
 {
   "name": "subtitlesx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI to download subtitles for movies and series.",
   "main": "index.js",
   "bin": {
