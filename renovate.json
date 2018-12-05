@@ -3,3 +3,16 @@
     "config:base"
   ]
 }
+
+{
+  "extends": [
+    "config:base"
+  ],
+  "assignees": [
+    "TiagoDanin"
+  ],
+  "labels": [
+    "renovate"
+  ],
+  "pinVersions": false
+}
