@@ -32,7 +32,7 @@
   "homepage": "https://github.com/TiagoDanin/SubtitlesX#readme",
   "dependencies": {
     "caporal": "1.1.0",
-    "opensubtitles-api": "5.0.0",
+    "opensubtitles-api": "5.0.1",
     "request": "2.88.0",
     "request-promise-native": "1.0.5",
     "zlib": "1.0.5",
