@@ -34,7 +34,7 @@
     "caporal": "1.1.0",
     "opensubtitles-api": "5.0.1",
     "request": "2.88.0",
-    "request-promise-native": "1.0.5",
+    "request-promise-native": "1.0.7",
     "zlib": "1.0.5",
     "snyk": "1.130.0"
   },
