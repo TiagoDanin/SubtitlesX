@@ -81,18 +81,50 @@ baseURL: https://tiagodanin.github.io
 
 
 <div class="uk-container">
-	<h1 id="subtitlesx-build-status"><a href="#subtitlesx-build-status">SubtitlesX <a href="https://travis-ci.org/TiagoDanin/SubtitlesX"><img src="https://travis-ci.org/TiagoDanin/SubtitlesX.svg?branch=master" alt="Build Status"></a></a></h1>
-<p><a href="https://nodei.co/npm/subtitlesx/"><img src="https://nodei.co/npm/subtitlesx.png?downloads=true&#x26;downloadRank=true&#x26;stars=true" alt="NPM"></a></p>
-<p>CLI Tool to download subtitles for movies and series.</p>
-<h1 id="install"><a href="#install">Install</a></h1>
-<p>NPM <code>npm install -g subtitlesx</code> and <code>npm install -g caporal</code></p>
-<h1 id="cli"><a href="#cli">CLI</a></h1>
+	<h1 id="subtitlesx"><a href="#subtitlesx">SubtitlesX</a></h1>
+<p><a href="https://npmjs.org/package/subtitlesx"><img src="https://img.shields.io/node/v/subtitlesx.svg?style=flat-square" alt="Node"></a>
+<a href="https://npmjs.org/package/subtitlesx"><img src="https://img.shields.io/npm/v/subtitlesx.svg?style=flat-square" alt="Version"></a>
+<a href="https://npmjs.org/package/subtitlesx"><img src="https://img.shields.io/npm/dt/subtitlesx.svg?style=flat-square" alt="Downloads"></a>
+<a href="https://travis-ci.org/TiagoDanin/SubtitlesX"><img src="https://img.shields.io/travis/TiagoDanin/SubtitlesX.svg?branch=master&#x26;style=flat-square" alt="Travis"></a></p>
+<p>CLI to download subtitles for movies and series.</p>
+<h2 id="installation"><a href="#installation">Installation</a></h2>
+<p>Module available through the
+<a href="https://www.npmjs.com/">npm registry</a>. It can be installed using the
+<a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm</code></a>
+or
+<a href="https://yarnpkg.com/en/"><code>yarn</code></a>
+command line tools.</p>
+<pre><code class="hljs language-sh"><span class="hljs-comment"># NPM</span>
+npm install subtitlesx --save
+<span class="hljs-comment"># Or Using Yarn</span>
+yarn add subtitlesx</code></pre>
+<h2 id="documentation"><a href="#documentation">Documentation</a></h2>
+<h3 id="cli"><a href="#cli">CLI</a></h3>
 <p>Run <code>subtitlesx --help</code></p>
-<h1 id="api"><a href="#api">API</a></h1>
+<h3 id="api"><a href="#api">API</a></h3>
 <ul>
 <li><code>getSubtitles(dir, name, langId, userAgent)</code></li>
 </ul>
 <p>e.g <code>getSubtitles('/root/movies/', 'Interstellar.mp4', 'en', 'TemporaryUserAgent')</code></p>
+<h2 id="tests"><a href="#tests">Tests</a></h2>
+<p>To run the test suite, first install the dependencies, then run <code>test</code>:</p>
+<pre><code class="hljs language-sh"><span class="hljs-comment"># NPM</span>
+npm <span class="hljs-built_in">test</span>
+<span class="hljs-comment"># Or Using Yarn</span>
+yarn <span class="hljs-built_in">test</span></code></pre>
+<h2 id="dependencies"><a href="#dependencies">Dependencies</a></h2>
+<ul>
+<li><a href="https://ghub.io/caporal">caporal</a>: A full-featured framework for building command line applications (cli) with node.js</li>
+<li><a href="https://ghub.io/opensubtitles-api">opensubtitles-api</a>: opensubtitles.org api wrapper</li>
+<li><a href="https://ghub.io/request">request</a>: Simplified HTTP request client.</li>
+<li><a href="https://ghub.io/request-promise-native">request-promise-native</a>: The simplified HTTP request client 'request' with Promise support. Powered by native ES6 promises.</li>
+<li><a href="https://ghub.io/zlib">zlib</a>: Simple, synchronous deflate/inflate for buffers</li>
+<li><a href="https://ghub.io/snyk">snyk</a>: snyk library and cli utility</li>
+</ul>
+<h2 id="contributors"><a href="#contributors">Contributors</a></h2>
+<p>Pull requests and stars are always welcome. For bugs and feature requests, please <a href="https://github.com/TiagoDanin/SubtitlesX/issues">create an issue</a>. <a href="https://github.com/TiagoDanin/SubtitlesX/graphs/contributors">List of all contributors</a>.</p>
+<h2 id="license"><a href="#license">License</a></h2>
+<p><a href="LICENSE">GPL-3.0</a> </p>
 
 
 	<hr class="uk-margin-top-remove uk-divider-icon">
