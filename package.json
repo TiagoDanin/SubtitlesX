@@ -1,21 +1,14 @@
 {
   "name": "subtitlesx",
+  "main": "index.js",
   "version": "1.0.1",
   "description": "CLI to download subtitles for movies and series.",
-  "main": "index.js",
-  "bin": {
-    "subtitlesx": "cli.js"
+  "author": {
+    "name": "Tiago Danin",
+    "email": "TiagoDanin@outlook.com",
+    "url": "https://TiagoDanin.github.io"
   },
-  "scripts": {
-    "cli": "node cli.js --help",
-    "test": "node test.js",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TiagoDanin/SubtitlesX.git"
-  },
+  "license": "GPL-3.0",
   "keywords": [
     "opensubtitles",
     "subtitles",
@@ -24,12 +17,32 @@
     "download",
     "cli"
   ],
-  "author": "Tiago Danin <TiagoDanin@outlook.com> (https://TiagoDanin.github.io)",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/TiagoDanin/SubtitlesX/issues"
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "cli": "node cli.js --help",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
+  "private": false,
+  "repository": "https://github.com/TiagoDanin/SubtitlesX.git",
   "homepage": "https://github.com/TiagoDanin/SubtitlesX#readme",
+  "bugs": "https://github.com/TiagoDanin/SubtitlesX/issues",
+  "github": {
+    "name": "SubtitlesX",
+    "owner": "TiagoDanin"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "cli.js",
+    "index.js",
+    "package.json"
+  ],
+  "documentation": "./docs.md",
+  "bin": {
+    "subtitlesx": "cli.js"
+  },
   "dependencies": {
     "caporal": "1.1.0",
     "opensubtitles-api": "5.0.1",
