@@ -48,7 +48,7 @@
     "opensubtitles-api": "5.0.1",
     "request": "2.88.0",
     "request-promise-native": "1.0.7",
-    "snyk": "1.147.1",
+    "snyk": "2.0.0",
     "zlib": "1.0.5"
   },
   "engines": {
