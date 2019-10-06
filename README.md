@@ -48,7 +48,6 @@ yarn test
 - [request](https://ghub.io/request): Simplified HTTP request client.
 - [request-promise-native](https://ghub.io/request-promise-native): The simplified HTTP request client &#x27;request&#x27; with Promise support. Powered by native ES6 promises.
 - [zlib](https://ghub.io/zlib): Simple, synchronous deflate/inflate for buffers
-- [snyk](https://ghub.io/snyk): snyk library and cli utility
 
 
 
